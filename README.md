@@ -1,8 +1,6 @@
 # Bundler::CtagsGenerator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bundler/ctags_generator`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A Bundler plugin to automatically execute ctags after `bundle install`.
 
 ## Installation
 
@@ -16,7 +14,14 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+Install as a Bundler plugin with `bundle plugin install bundler-ctags_generator`. After installing it, it executes `ctags` command after each `bundle install`.
+
+It's recommended to install and use [Universal Ctags](https://ctags.io/), other ctags implementations are not tested.
+
+## TODO
+
+* Add configuration for ctags arguments and output file name
+* Add option to filter gems
 
 ## Development
 
