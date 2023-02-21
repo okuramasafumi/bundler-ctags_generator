@@ -13,7 +13,7 @@ module Bundler
     end
 
     def self.execute_ctags(filename, path)
-      cmd = "ctags --exclude='spec/*' --exclude='test/*' -f '#{filename}' --languages=ruby -R #{path}"
+      cmd = "ctags --exclude='spec/*' --exclude='test/*' --exclude='**/node_modules/**/*' -f '#{filename}' --languages=ruby -R #{path}"
       system(cmd)
     end
 
